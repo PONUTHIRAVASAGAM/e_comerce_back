@@ -70,13 +70,13 @@ const registerUser = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // Use your email service
       auth: {
-        user: 'ponuthiravasagamexamsdaily@gmail.com', // Your email
-        pass: '	oxbg ukdf zund ygvl', // Your email password
+        user: 'youremail@gmail.com', // Your email
+        pass: '	yourCode', // Your email password
       },
     });
 
     const mailOptions = {
-      from: 'ponuthiravasagamexamsdaily@gmail.com',
+      from: 'youremail@gmail.com',
       to: email,
       subject: 'Your OTP Code',
       text: `Your OTP code is: ${otp}`,
