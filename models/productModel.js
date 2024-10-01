@@ -52,7 +52,7 @@ const Product = sequelize.define('Product', {
     allowNull: false,
   },
 }, {
-  timestamps: false, // Disables automatic timestamps (createdAt, updatedAt)
+  // timestamps: false,
   tableName: 'Products', // Specify the table name
 });
 

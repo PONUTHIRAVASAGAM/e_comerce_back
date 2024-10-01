@@ -151,10 +151,13 @@ const jwt = require('jsonwebtoken');
 dotenv.config();
 
 const authenticateUser = async (req, res) => {
+  console.log("=====AuthenticateUser Method Calling=====");
+
     const { userName, password } = req.body;
 
     try {
-        const result = await userRepository.findUserByUserName(userName);
+        // const result = await userRepository.findUserByUserName(userName);
+        const result = await userRepository.findUserByEmail(userName);
         const user = result.dataValues;
 
         console.log("=====PasswordIN=====", password);

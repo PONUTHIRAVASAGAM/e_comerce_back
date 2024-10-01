@@ -11,6 +11,8 @@ const createUser = async (userData) => {
 };
 
 const findUserByUserName = async (userName) => {
+  console.log("=====FindBy User Name Calling=====");
+  
   return await User.findOne({  where: { userName } });
 }
 

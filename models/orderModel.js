@@ -82,8 +82,8 @@ const Order = sequelize.define('Order', {
   },
 
 }, {
-  timestamps: false, // Disables automatic timestamps (createdAt, updatedAt)
-  tableName: 'Orders', // Specify the table name
+  // timestamps: false,
+  tableName: 'Orders',
 });
 
 // Synchronize the model with the database

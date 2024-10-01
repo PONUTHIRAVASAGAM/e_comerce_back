@@ -38,6 +38,7 @@ const User = sequelize.define('User', {
     defaultValue: 'DISABLED', // You can set a default value if needed
   },
 }, {
+  tableName: 'Users',
   // Other model options go here
 });
 
