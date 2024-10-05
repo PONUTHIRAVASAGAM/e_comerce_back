@@ -5,6 +5,15 @@ const createOrder = async (orderData) => {
     return await order.save();
   };
 
+  // const getOrdersByOwnerId = async (userId) => {
+    // console.log("=====userId=====", userId); 
+    // const [orders] = await sequelize.query('SELECT * FROM orders WHERE ownerId = :userId', {
+        // replacements: { userId },
+        // type: sequelize.QueryTypes.SELECT
+    // });
+    // 
+    // return orders;
+// };
 const getOrdersByOwnerId = async (userId) => {
     console.log("=====userId=====",userId);  
     return await Order.findAll({ where: { ownerId: userId } });
